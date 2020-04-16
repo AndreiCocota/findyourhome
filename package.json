@@ -3,13 +3,18 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "nodemon server.js",
+    "start": "node server.js",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "postinstall": "ng build --aot --prod"
+    "postinstall": "ng build --output-path dist/ng2-cribs  --aot --prod"
   },
+  "engines": {
+    "node": "13.9.0",
+    "npm": "6.13.7"
+  },
+
   "private": true,
   "dependencies": {
     "@angular/animations": "~9.0.7",
@@ -54,9 +59,6 @@
     "ts-node": "~8.3.0",
     "tslint": "~5.18.0",
     "typescript": "~3.7.5"
-  },
-  "engines": {
-    "node": "13.9.0",
-    "npm": "6.13.7"
   }
+  
 }
