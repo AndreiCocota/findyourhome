@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "node server.js",
+    "start": "nodemon server.js",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
@@ -25,6 +25,7 @@
     "@angular/router": "~9.0.7",
     "bootstrap": "^4.4.1",
     "express": "^4.17.1",
+    "nodemon": "^2.0.3",
     "path": "^0.12.7",
     "rxjs": "~6.5.4",
     "rxjs-compat": "^6.5.4",
